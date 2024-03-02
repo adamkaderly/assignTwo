@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Url Parsing</title>
+    </head>
+<main>
+    <link rel="stylesheet" href="styling.css">
+    <header>
+        <h1>Url Parsing</h1>
+        <nav>
+            <h3><a href="index.html">Back to Home</a></h3>
+        </nav>
+    </header>
+    <body>
+        <p>
+            <img src="images/url_parse.png" alt="A photo showing different parts of an URL">
+            URL parsing is the process of breaking down a Uniform Resource Locator (URL) into its constituent parts to understand its components and their meanings. A URL is used to specify the address of a resource on the internet and typically consists of several components. Here's a detailed explanation of URL parsing:
+<br><br>
+<b style="background-color:rgb(184, 230, 184);">1. Scheme (Protocol):</b>
+<br><br>
+The scheme or protocol specifies the method or protocol used to access the resource. Common schemes include:
+<br>
+<ins>http</ins> - Hypertext Transfer Protocol (used for regular web pages).
+<br>
+<ins>https</ins> - Secure Hypertext Transfer Protocol (encrypted version of HTTP).
+<br>
+<ins>ftp</ins> - File Transfer Protocol (used for file downloads/upload).
+<br>
+<ins>mailto</ins> - Email addresses.
+<br>
+<ins>file</ins> - Local file system resource.
+<br><br>
+<b style="background-color:rgb(184, 230, 184);">2. Authority (Domain and Port):</b>
+<br><br>
+The authority component typically consists of two parts:
+<br>
+<ins>Domain (or Host):</ins> This is the human-readable address of the server where the resource is hosted. It can be an IP address (e.g., 192.168.1.1) or a domain name (e.g., www.example.com).
+<br>
+<ins>Port:</ins> The port number is optional and follows the domain, separated by a colon (e.g., :8080). It specifies the port on the server to connect to. If omitted, the default port for the scheme is used (e.g., 80 for HTTP, 443 for HTTPS).
+<br><br>
+<b style="background-color:rgb(184, 230, 184);">3. Path:</b>
+<br><br>
+The path component specifies the specific location or file on the server where the resource is located. It often resembles a hierarchical structure with forward slashes ("/") to separate directories or parts of the path (e.g., /folder/subfolder/resource.html).
+<br><br>
+<b style="background-color:rgb(184, 230, 184);">4. Query Parameters:</b>
+<br><br>
+The query component appears after a question mark ("?") and contains key-value pairs separated by ampersands ("&"). It is used to pass data to the server, typically for search or filtering purposes. For example, in the URL https://www.example.com/search?q=URL+parsing&page=1, the query parameters are q=URL+parsing and page=1.
+<br><br>
+<b style="background-color:rgb(184, 230, 184);">5. Fragment Identifier (Hash):</b>
+<br><br>
+The fragment identifier is preceded by a hash ("#") and is used to specify a specific section or anchor within the resource. It's often used in web pages to link to a particular section of a page. For example, in the URL https://www.example.com/page#section2, the fragment identifier is section2.
+<br><br>
+Here's an example URL broken down into its components:
+<br>
+URL: https://www.example.com:8080/path/to/resource.html?q=search&lang=en#section2
+<br>
+Scheme: https
+<br>
+Authority:
+<br>
+Domain: www.example.com
+<br>
+Port: 8080
+<br>
+Path: /path/to/resource.html
+<br>
+Query Parameters: q=search  lang=en
+<br>
+Fragment Identifier: section2
+<br><br>
+URL parsing is a fundamental process in web communication as it helps browsers and web servers understand how to access and retrieve resources based on the provided URL. Each component serves a specific purpose, and parsing allows for the proper construction of HTTP requests to fetch web content.
+        </p>
+    </body>
+    <footer>
+        <h3>Created by: Adam Kaderly</h3>
+        <h5>CS 2033<br>2024</h5>
+    </footer>
+</main>
+</html>
+       

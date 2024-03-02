@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DNS</title>
+    </head>
+<main>
+    <link rel="stylesheet" href="styling.css">
+    <header>
+        <h1>DNS</h1>
+        <nav>
+            <h3><a href="index.html">Back to Home</a></h3>
+        </nav>
+    </header>
+    <body>
+        <p>
+            <img src="images/dns_res.png" alt="A diagram of DNS resolution">
+            DNS (Domain Name System) resolution is the process of converting a human-readable domain name, like "www.example.com," into an IP (Internet Protocol) address, such as "93.184.216.34." This translation is necessary because computers communicate over the internet using IP addresses, but humans find it more convenient to use domain names. Here's a detailed explanation of DNS resolution using an example URL:
+<br>
+Example URL: https://www.example.com/path/to/resource.html
+<br><br>
+<b style="background-color:rgb(184, 230, 184);">1. User Input:</b>
+<br><br>
+A user enters the URL https://www.example.com/path/to/resource.html into their web browser's address bar.
+<br><br>
+<b style="background-color:rgb(184, 230, 184);">2. URL Parsing (Optional):</b>
+<br><br>
+Before DNS resolution, the browser parses the URL to extract the domain name, which is www.example.com in this case.
+
+The browser first checks its local cache to see if it has recently resolved this domain name. If not, it proceeds to query the DNS system.
+The DNS resolution process starts with the root DNS servers. These servers are the highest level of the DNS hierarchy and contain information about the top-level domains (TLDs), like .com, .org, .net, etc.
+<br><br>
+<b style="background-color:rgb(184, 230, 184);">3. TLD DNS Server:</b>
+<br><br>
+The root DNS servers respond to the browser's query with a referral to the appropriate TLD DNS server for the .com TLD.
+The browser now contacts the .com TLD DNS server.
+<br><br>
+<b style="background-color:rgb(184, 230, 184);">4. Authoritative DNS Server (example.com):</b>
+<br><br>
+The .com TLD DNS server responds with a referral to the authoritative DNS server for example.com, which is responsible for storing the IP address associated with www.example.com.
+The browser now contacts the authoritative DNS server for example.com.
+<br><br>
+<b style="background-color:rgb(184, 230, 184);">5. IP Address Resolution:</b>
+<br><br>
+The authoritative DNS server for example.com holds the mapping between www.example.com and its IP address, in this case, 93.184.216.34.
+It responds to the browser's DNS query with the IP address.
+<br><br>
+<b style="background-color:rgb(184, 230, 184);">6. DNS Response:</b>
+<br><br>
+The browser receives the IP address 93.184.216.34 from the authoritative DNS server for example.com.
+<br><br>
+<b style="background-color:rgb(184, 230, 184);">7. Caching (Optional):</b>
+<br><br>
+The browser caches this DNS response to speed up future requests to the same domain, reducing the need for repeated DNS resolutions.
+<br><br>
+<b style="background-color:rgb(184, 230, 184);">8. Connection Establishment:</b>
+<br><br>
+Armed with the IP address, the browser can now initiate a connection to the web server associated with www.example.com, using the HTTP or HTTPS protocol, as indicated by the URL scheme.
+<br><br>
+<b style="background-color:rgb(184, 230, 184);">9. HTTP Request:</b>
+<br><br>
+The browser constructs an HTTP request based on the original URL and sends it to the web server at 93.184.216.34, requesting the resource specified in the path, such as /path/to/resource.html.
+<br><br>
+<b style="background-color:rgb(184, 230, 184);">10. Server Response:</b>
+<br><br>
+The web server processes the request, retrieves the requested resource, and sends an HTTP response back to the browser.
+<br><br>
+<b style="background-color:rgb(184, 230, 184);">11. Page Rendering (Optional):</b>
+<br><br>
+The browser renders the web page using the content received from the web server.
+<br><br>
+In summary, DNS resolution is a critical step in web communication that allows users to access websites using human-readable domain names. The DNS system helps translate these names into the corresponding IP addresses, enabling browsers to establish connections with the correct web servers and retrieve the requested content.
+        </p>
+    </body>
+    <footer>
+        <h3>Created by: Adam Kaderly</h3>
+        <h5>CS 2033<br>2024</h5>
+    </footer>
+</main>
+</html>
+       

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Web Servers</title>
+    </head>
+<main>
+    <link rel="stylesheet" href="styling.css">
+    <header>
+        <h1>Web Servers</h1>
+        <nav>
+            <h3><a href="index.html">Back to Home</a></h3>
+        </nav>
+    </header>
+    <body>
+        <p>
+            <img src="images/apache_server.png" alt="A diagram of how an Apache server works">
+            The Apache HTTP Server, often referred to as Apache, is a popular open-source web server that serves as an example for explaining the primary functions performed by modern web servers when handling an HTTP request. These functions ensure that the requested resources are delivered to the client's web browser efficiently and correctly. Here's a detailed breakdown of these functions:
+<br><br>
+<b style="background-color:rgb(184, 230, 184);">1. Listening for Incoming Requests:</b>
+<br><br>
+Apache continuously listens for incoming HTTP requests on a specific port (usually port 80 for HTTP and port 443 for HTTPS). It may also listen on custom ports if configured.
+<br><br>
+<b style="background-color:rgb(184, 230, 184);">2. Connection Handling:</b>
+<br><br>
+When a client (typically a web browser) initiates an HTTP request, Apache accepts the incoming connection request and establishes a communication channel between the client and the server.
+<br><br>
+<b style="background-color:rgb(184, 230, 184);">3. Request Parsing:</b>
+<br><br>
+Apache parses the incoming HTTP request, which includes the following components:
+<ul>
+    <li>Request method (e.g., GET, POST, PUT, DELETE).</li>
+    <li>Requested URL (Uniform Resource Locator).</li>
+    <li>HTTP version.</li>
+    <li>Request headers (e.g., User-Agent, Accept-Encoding, Host).</li>
+    <li>Request body (for POST and PUT requests).</li>
+</ul>
+<br>
+<b style="background-color:rgb(184, 230, 184);">4. URL Mapping and Virtual Host Configuration:</b>
+<br><br>
+Apache's configuration includes directives that determine how requests are mapped to specific directories or virtual hosts.
+Virtual hosts allow hosting multiple websites on a single server, each with its own domain or IP address.
+<br><br>
+<b style="background-color:rgb(184, 230, 184);">5. Content Retrieval and Generation:</b>
+<br><br>
+Based on the parsed request, Apache retrieves the requested resource or generates content dynamically through server-side scripting languages like PHP, Python, or Ruby.
+Apache may also serve static files (HTML, CSS, JavaScript, images) directly from the file system.
+<br><br>
+<b style="background-color:rgb(184, 230, 184);">6. Access Control and Authentication:</b>
+<br><br>
+Apache can enforce access control rules to restrict access to specific resources or directories based on user credentials or IP addresses.
+It can also handle authentication processes, such as Basic Authentication or OAuth, to verify user identities.
+<br><br>
+<b style="background-color:rgb(184, 230, 184);">7. Error Handling:</b>
+<br><br>
+If Apache encounters errors during request processing (e.g., 404 Not Found, 500 Internal Server Error), it generates appropriate error responses and sends them back to the client.
+<br><br>
+<b style="background-color:rgb(184, 230, 184);">8. Request Routing:</b>
+<br><br>
+Apache can perform URL rewriting and redirection to route requests to different locations or rewrite URLs for search engine optimization (SEO) purposes.
+<br><br>
+<b style="background-color:rgb(184, 230, 184);">9. Response Generation:</b>
+<br><br>
+Apache generates an HTTP response that includes the following components:
+<ul>
+    <li>Status line (e.g., HTTP/1.1 200 OK).</li>
+    <li>Response headers (e.g., Content-Type, Content-Length, Cache-Control).</li>
+    <li>Response body (containing the requested content or dynamically generated data).</li>
+</ul>
+<br>
+<b style="background-color:rgb(184, 230, 184);">10. Content Compression and Caching:</b>
+<br><br>
+Apache can compress response content to reduce bandwidth usage if the client supports it (e.g., using GZIP).
+It may also implement caching mechanisms to store and serve cached responses for improved performance.
+<br><br>
+<b style="background-color:rgb(184, 230, 184);">11. Logging and Monitoring:</b>
+<br><br>
+Apache logs various details about incoming requests and responses, such as IP addresses, requested URLs, and response codes.
+This logging information is crucial for monitoring server activity and troubleshooting issues.
+<br><br>
+<b style="background-color:rgb(184, 230, 184);">12. Security:</b>
+<br><br>
+Apache can implement security measures like access control, SSL/TLS encryption, and security headers to protect against common web vulnerabilities.
+<br><br>
+<b style="background-color:rgb(184, 230, 184);">13. Load Balancing (Optional):</b>
+<br><br>
+In cases of high traffic or redundancy, Apache can function as a load balancer, distributing incoming requests across multiple backend servers for improved scalability and fault tolerance.
+<br><br>
+<b style="background-color:rgb(184, 230, 184);">14. Response Sending:</b>
+<br><br>
+Finally, Apache sends the HTTP response back to the client through the established connection, ensuring that the response is correctly formatted and adheres to the HTTP protocol.
+<br><br>
+The Apache HTTP Server, like other modern web servers, plays a pivotal role in handling HTTP requests by parsing, processing, and delivering web content while providing security, access control, and various configuration options to meet the needs of different websites and applications.
+        </p>
+    </body>
+    <footer>
+        <h3>Created by: Adam Kaderly</h3>
+        <h5>CS 2033<br>2024</h5>
+    </footer>
+</main>
+</html>
+       

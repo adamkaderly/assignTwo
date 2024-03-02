@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Web Browsers</title>
+    </head>
+<main>
+    <link rel="stylesheet" href="styling.css">
+    <header>
+        <h1>Web Browsers</h1>
+        <nav>
+            <h3><a href="index.html">Back to Home</a></h3>
+        </nav>
+    </header>
+    <body>
+        <p>
+            <img src="images/web_requests.png" alt="A diagram of how Chrome handles HTTP requests">
+            Modern web browsers like Google Chrome perform several primary functions when handling an HTTP response. These functions ensure that the web page is displayed correctly and that the user has a seamless browsing experience. Here's a detailed explanation of these functions using Google Chrome as an example:
+<br><br>
+<b style="background-color:rgb(184, 230, 184);">1. Receiving and Processing the Response:</b>
+<br><br>
+When a web browser, like Google Chrome, sends an HTTP request to a web server, it waits for the server's response.
+The browser receives the HTTP response from the server, which includes the requested web page's content and associated metadata (HTTP headers).
+<br><br>
+<b style="background-color:rgb(184, 230, 184);">2. Status Code Handling:</b>
+<br><br>
+Chrome examines the HTTP status code included in the response to determine if the request was successful or encountered an error. Common status codes include:
+<ul>
+    <li>200 OK: Successful request.</li>
+    <li>404 Not Found: Requested resource not found.</li>
+    <li>500 Internal Server Error: Server encountered an error.</li>
+</ul>
+<br>
+<b style="background-color:rgb(184, 230, 184);">3. Content Parsing:</b>
+<br><br>
+Chrome parses the content of the HTTP response based on the content type specified in the response headers (e.g., HTML, CSS, JavaScript, images, etc.).
+For HTML content, Chrome parses the HTML markup to build the Document Object Model (DOM) tree, which represents the structure and content of the web page.
+<br><br>
+<b style="background-color:rgb(184, 230, 184);">4. Rendering the Web Page:</b>
+<br><br>
+Chrome's rendering engine, called Blink, takes the DOM tree and renders it into a visual representation on the user's screen.
+It applies styles (CSS) to elements, calculates layouts, and paints pixels on the screen.
+JavaScript is executed as needed, and it can modify the DOM or interact with the browser and server via AJAX requests.
+<br><br>
+<b style="background-color:rgb(184, 230, 184);">5. Resource Loading:</b>
+<br><br>
+While rendering the page, Chrome encounters references to external resources such as stylesheets, images, scripts, and fonts embedded in the HTML.
+It initiates parallel requests to fetch these resources, which may be hosted on the same or different servers.
+<br><br>
+<b style="background-color:rgb(184, 230, 184);">6. Caching and Network Optimization:</b>
+<br><br>
+Chrome utilizes various caching mechanisms to store and reuse resources that haven't changed since the last visit to the website.
+It may also employ techniques like HTTP/2 or HTTP/3 and connection pooling to optimize network requests for performance.
+<br><br>
+<b style="background-color:rgb(184, 230, 184);">7. Security Checks:</b>
+<br><br>
+Chrome performs several security checks, including validating SSL/TLS certificates for HTTPS connections to ensure secure data transmission.
+It also checks for cross-site scripting (XSS) vulnerabilities and cross-site request forgery (CSRF) protection.
+<br><br>
+<b style="background-color:rgb(184, 230, 184);">8. User Interface Updates:</b>
+<br><br>
+The browser updates the user interface to reflect the loading progress of the web page. This includes displaying a loading spinner, indicating secure connections with HTTPS, and showing any relevant notifications.
+<br><br>
+<b style="background-color:rgb(184, 230, 184);">9. User Interaction Handling:</b>
+<br><br>
+As the page loads and becomes interactive, Chrome allows users to interact with the web page, including clicking links, submitting forms, and interacting with JavaScript-based features.
+<br><br>
+<b style="background-color:rgb(184, 230, 184);">10. Error Handling:</b>
+<br><br>
+If any errors occur during the loading or rendering process, Chrome may display error messages or handle the errors gracefully to prevent crashes.
+<br><br>
+<b style="background-color:rgb(184, 230, 184);">11.Extensions and Plugins:</b>
+<br><br>
+Chrome supports extensions and plugins that can modify or enhance its functionality. These extensions can interact with the HTTP response, change its appearance, or add features to the browser.
+<br><br>
+<b style="background-color:rgb(184, 230, 184);">Accessibility and Compatibility:</b>
+<br><br>
+Chrome includes features for accessibility, making web content usable for individuals with disabilities.
+It also aims to maintain compatibility with web standards and specifications to ensure consistent rendering across different websites.
+<br><br>
+Modern web browsers like Google Chrome and Mozilla Firefox perform a series of complex tasks to fetch, process, and display web content efficiently while ensuring security and user experience. These functions work together to create the seamless browsing experience we enjoy today.
+        </p>
+    </body>
+    <footer>
+        <h3>Created by: Adam Kaderly</h3>
+        <h5>CS 2033<br>2024</h5>
+    </footer>
+</main>
+</html>
+       

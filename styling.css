@@ -1,0 +1,19 @@
+main{
+    font-family: 'Courier New', Courier, monospace
+}
+header{
+    background-color: rgb(184, 230, 184);
+    color: white;
+    padding: 15px;
+    size: 10px
+}
+img{
+    float: left;
+    width: 700px
+}
+footer{
+    background-color: rgb(146, 164, 243);
+    color: white;
+    padding: 5px;
+    size: 5px
+}

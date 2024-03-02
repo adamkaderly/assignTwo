@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+    </head>
+<main>
+    <link rel="stylesheet" href="styling.css">
+    <header>
+        <h1>Home</h1>
+        <nav>
+            <h3><a href="history.html">History</a>&nbsp
+                <a href="url_parsing.html">Url Parsing</a>&nbsp
+                <a href="dns.html">DNS Resolution</a>&nbsp
+                <a href="web_browsers.html">Web Browsers</a>&nbsp
+                <a href="web_servers.html">Web Servers</a></h3>
+        </nav>
+    </header>
+    <body>
+        <p>
+            <img src="images/web_application_server.png" alt="A diagram of web browser and web server communication">
+            The communication between a web browser and a web server based on a URL involves several steps and protocols working together to retrieve and display a web page. Here's a simplified overview of the key steps involved:
+<br><br>
+<b style="background-color:rgb(184, 230, 184);">1. URL Parsing:</b>
+<br><br>
+The process begins when a user enters a URL (Uniform Resource Locator) into the browser's address bar. The URL typically consists of several components, including the protocol (e.g., HTTP or HTTPS), domain name (e.g., www.example.com), port (if specified), path, and query parameters.
+<br>
+<ins>DNS Resolution:</ins>
+The browser needs to resolve the domain name (e.g., www.example.com) to an IP address because network communication relies on IP addresses. It sends a DNS (Domain Name System) query to a DNS server to obtain the IP address associated with the domain.
+<br><br>
+<b style="background-color:rgb(184, 230, 184);">2. Establishing a TCP Connection:</b>
+<br><br>
+Once the browser knows the IP address of the web server, it initiates a TCP (Transmission Control Protocol) connection to the server. This involves a three-way handshake to establish a reliable connection between the client (browser) and server.
+<br><br>
+<b style="background-color:rgb(184, 230, 184);">3. Sending an HTTP Request:</b>
+<br><br>
+With the TCP connection established, the browser crafts an HTTP (Hypertext Transfer Protocol) request based on the URL and other headers. The request includes information about the desired resource (e.g., the path and query parameters) and the HTTP method (e.g., GET for fetching a web page).
+<br><br>
+<b style="background-color:rgb(184, 230, 184);">4. Server Processing:</b>
+<br><br>
+The web server receives the HTTP request and processes it. This may involve checking for the requested resource, executing any server-side scripts, and accessing databases if necessary.
+<br>
+<ins>Generating an HTTP Response:</ins>
+After processing the request, the web server generates an HTTP response. This response typically includes the requested web page's content and headers, including metadata such as content type, status codes (e.g., 200 OK for success), and caching directives.
+<br><br>
+<b style="background-color:rgb(184, 230, 184);">5. Sending the Response:</b>
+<br><br>
+The web server sends the HTTP response back to the browser through the established TCP connection.
+<br><br>
+<b style="background-color:rgb(184, 230, 184);">6. Browser Rendering:</b>
+<br><br>
+Upon receiving the response, the browser processes the content and displays it to the user. This may involve rendering HTML, executing JavaScript code, loading additional resources (e.g., CSS stylesheets and images) by following embedded URLs, and rendering the final web page on the user's screen.
+<br><br>
+<b style="background-color:rgb(184, 230, 184);">7. Closing the Connection:</b>
+<br><br>
+Once the web page is fully loaded and displayed, the TCP connection may be closed. However, modern browsers often use techniques like HTTP keep-alive to reuse existing connections for subsequent requests to the same server, reducing latency.
+<br>
+<ins>Handling User Interactions:</ins>
+The browser continues to interact with the server as the user interacts with the web page. This includes sending additional HTTP requests for resources, form submissions, and handling asynchronous requests via technologies like AJAX.
+<br><br>
+This sequence of steps repeats for each web page request and interaction between the browser and server, enabling the retrieval and display of web content based on the URL entered by the user.
+        </p>
+    </body>
+    <footer>
+        <h3>Created by: Adam Kaderly</h3>
+        <h5>CS 2033<br>2024</h5>
+    </footer>
+</main>
+</html>
+       
